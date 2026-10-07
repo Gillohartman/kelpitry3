@@ -21,15 +21,13 @@ jobs:
           cache: gradle
 
       - name: Make Gradle executable
-        working-directory: greenmod
         run: chmod +x gradlew
 
       - name: Build mod
-        working-directory: greenmod
         run: ./gradlew build --no-daemon
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: greenmod-jar
-          path: greenmod/build/libs/*.jar
+          path: build/libs/*.jar
