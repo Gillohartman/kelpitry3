@@ -144,7 +144,7 @@ public class GreenGui extends Screen {
 
 	/** A thin-outlined rounded card. */
 	private void cardBox(GuiGraphicsExtractor g, int x, int y, int w, int h, int r, boolean hv) {
-		cardBox(g, x, y, w, h, r, hv);
+		Ui.rr(g, x, y, w, h, r, Ui.opaque(hv ? cardHover() : card()));
 		Ui.rrOutline(g, x, y, w, h, r, Ui.a(hv ? acc() : 0xFFFFFF, hv ? 0.5 : 0.09));
 	}
 
