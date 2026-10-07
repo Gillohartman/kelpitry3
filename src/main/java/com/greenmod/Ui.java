@@ -249,10 +249,10 @@ public final class Ui {
 	public static void compassLetters(GuiGraphicsExtractor g, Font f, int x, int y, int size) {
 		float sc = 0.7f;
 		int cx = x + size / 2, cy = y + size / 2;
-		small(g, "N", cx - f.width("N") * sc / 2f, y + 1, 0xFFFFFF, sc);
-		small(g, "S", cx - f.width("S") * sc / 2f, y + size - 8, 0xBBBBBB, sc);
-		small(g, "W", x + 2, cy - 3, 0xBBBBBB, sc);
-		small(g, "E", x + size - 2 - f.width("E") * sc, cy - 3, 0xBBBBBB, sc);
+		small(g, f, "N", cx - f.width("N") * sc / 2f, y + 1, 0xFFFFFF, sc);
+		small(g, f, "S", cx - f.width("S") * sc / 2f, y + size - 8, 0xBBBBBB, sc);
+		small(g, f, "W", x + 2, cy - 3, 0xBBBBBB, sc);
+		small(g, f, "E", x + size - 2 - f.width("E") * sc, cy - 3, 0xBBBBBB, sc);
 	}
 
 	/** A small arrow at (cx, cy) pointing the way the player looks (yaw in radians, north is up). */
