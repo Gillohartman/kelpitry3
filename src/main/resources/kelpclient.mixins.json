@@ -1,0 +1,28 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.greenmod.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "EntityMixin",
+    "OptionsMixin",
+    "EntityRendererMixin",
+    "ItemInHandRendererMixin",
+    "MouseHandlerMixin",
+    "LivingEntityMixin",
+    "AbstractContainerScreenMixin",
+    "TitleScreenMixin",
+    "ScreenEffectRendererMixin",
+    "CameraMixin",
+    "ScreenMixin",
+    "BlockMixin",
+    "LevelMixin",
+    "ItemEntityRendererMixin",
+    "ChatComponentMixin",
+    "PlayerMixin",
+    "ChatQueueMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
