@@ -1,4 +1,3 @@
-```yaml
 name: Build Kelp Client
 
 on:
@@ -18,7 +17,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '25'
-          distribution: 'temurin'
+          distribution: temurin
           cache: gradle
 
       - name: Make Gradle executable
@@ -34,4 +33,3 @@ jobs:
         with:
           name: greenmod-jar
           path: greenmod/build/libs/*.jar
-```
